@@ -5,20 +5,19 @@ const searcher = new Searcher();
 
 class SearchApp {
 
-  // initial state can be loaded from localstorage or database
-
   constructor(){
     this.stateSubject = new Rx.ReplaySubject();
     this._setState({
       formZipCode: '',
       selectedZipCode: '',
       searchHistory: {
+        // initial state can be loaded from localstorage or database
         '65432': {zipCode: '65432', 'place name': 'Test', state: 'IL'}
       }
     });
   }
 
-  // private methods
+  // private SearchApp methods
   
   _notifyStateChange() {
     this.stateSubject.onNext(this.state);
@@ -34,7 +33,7 @@ class SearchApp {
     this._notifyStateChange();
   }
   
-  // public methods
+  // public SearchApp methods
 
   findZipCode(zipCode) {
 
