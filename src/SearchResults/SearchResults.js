@@ -33,7 +33,7 @@ class SearchResults extends Component {
       <SearchResult
         key={place.zipCode}
         place={place}
-        selected={place.zipCode == this.state.selectedZipCode}>
+        selected={place.zipCode === this.state.selectedZipCode}>
       </SearchResult>
     ));
   }
@@ -73,7 +73,7 @@ class SearchResults extends Component {
 
   _getSortFunction(field) {
     return (a, b) => {
-      if (a[field] == b[field]) return 0;
+      if (a[field] === b[field]) return 0;
       return a[field] < b[field] ? -1 : 1;
     }
   }

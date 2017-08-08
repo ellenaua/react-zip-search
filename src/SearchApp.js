@@ -50,7 +50,7 @@ class SearchApp {
   }
 
   selectZipCode(zipCode) {
-    let selectedZipCode = this.state.selectedZipCode == zipCode ? '' : zipCode;
+    let selectedZipCode = this.state.selectedZipCode === zipCode ? '' : zipCode;
     this._setState({
       'formZipCode': selectedZipCode,
       'selectedZipCode': selectedZipCode
