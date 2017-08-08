@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.SortPanel{
+  font-style: italic;
+  color: gray;
+}
+
+.SortPanel a{
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.SortPanel a.selected{
+  font-weight: bold;
+}

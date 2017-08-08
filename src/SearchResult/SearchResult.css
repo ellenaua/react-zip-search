@@ -1,0 +1,12 @@
+.searchResult{
+  cursor: pointer;
+}
+
+.searchResult.selected{
+  font-weight: bold;
+}
+
+.searchResult a.delete{
+  color: red;
+  margin-left: 20px;
+}
